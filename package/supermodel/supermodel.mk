@@ -20,9 +20,12 @@ define SUPERMODEL_BUILD_CMDS
 endef
 
 define SUPERMODEL_INSTALL_TARGET_CMDS
-	$(INSTALL) -D -m 0755 $(@D)/bin/supermodel $(TARGET_DIR)/usr/bin/supermodel
-	$(INSTALL) -D -m 0755 $(@D)/Configs/Games.xml $(TARGET_DIR)/recalbox/share_init/roms/model3/Games.xml
-	$(INSTALL) -D -m 0755 $(@D)/Configs/Supermodel.ini $(TARGET_DIR)/recalbox/share_init/configs/model3/Supermodel.ini
+	$(INSTALL) -D -m 0755 $(@D)/bin/supermodel \
+		$(TARGET_DIR)/usr/bin/supermodel
+	$(INSTALL) -D -m 0644 $(@D)/Config/Games.xml \
+		$(TARGET_DIR)/recalbox/share_init/system/configs/model3/games.xml
+	$(INSTALL) -D -m 0644 $(@D)/Config/Supermodel.ini \
+		$(TARGET_DIR)/recalbox/share_init/system/configs/model3/supermodel.ini
 endef
 
 $(eval $(generic-package))
