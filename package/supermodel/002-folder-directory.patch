@@ -1,0 +1,49 @@
+--- a/Src/OSD/SDL/Main.cpp	2019-02-19 10:24:31.000000000 +0100
++++ b/Src/OSD/SDL/Main.cpp	2020-01-10 14:33:50.642250552 +0100
+@@ -527,7 +527,7 @@
+ {
+   CBlockFile  SaveState;
+   
+-  std::string file_path = Util::Format() << "Saves/" << Model3->GetGame().name << ".st" << s_saveSlot;
++  std::string file_path = Util::Format() << "../../../recalbox/share/saves/model3/" << Model3->GetGame().name << ".st" << s_saveSlot;
+   if (OKAY != SaveState.Create(file_path, "Supermodel Save State", "Supermodel Version " SUPERMODEL_VERSION))
+   {
+     ErrorLog("Unable to save state to '%s'.", file_path.c_str());
+@@ -552,7 +552,7 @@
+   
+   // Generate file path
+   if (file_path.empty())
+-    file_path = Util::Format() << "Saves/" << Model3->GetGame().name << ".st" << s_saveSlot;
++    file_path = Util::Format() << "../../../recalbox/share/saves/model3/" << Model3->GetGame().name << ".st" << s_saveSlot;
+   
+   // Open and check to make sure format is correct
+   if (OKAY != SaveState.Load(file_path))
+@@ -586,7 +586,7 @@
+ {
+   CBlockFile  NVRAM;
+   
+-  std::string file_path = Util::Format() << "NVRAM/" << Model3->GetGame().name << ".nv";
++  std::string file_path = Util::Format() << "../../../recalbox/share/system/configs/model3/NVRAM/" << Model3->GetGame().name << ".nv";
+   if (OKAY != NVRAM.Create(file_path, "Supermodel NVRAM State", "Supermodel Version " SUPERMODEL_VERSION))
+   {
+     ErrorLog("Unable to save NVRAM to '%s'. Make sure directory exists!", file_path.c_str());
+@@ -609,7 +609,7 @@
+   CBlockFile  NVRAM;
+   
+   // Generate file path
+-  std::string file_path = Util::Format() << "NVRAM/" << Model3->GetGame().name << ".nv";
++  std::string file_path = Util::Format() << "../../../recalbox/share/system/configs/model3/NVRAM/" << Model3->GetGame().name << ".nv";
+   
+   // Open and check to make sure format is correct
+   if (OKAY != NVRAM.Load(file_path))
+@@ -1224,8 +1224,8 @@
+  Entry Point and Command Line Procesing
+ ******************************************************************************/
+ 
+-static const char s_configFilePath[] = { "Config/Supermodel.ini" };
+-static const char s_gameXMLFilePath[] = { "Config/Games.xml" };
++static const char s_configFilePath[] = { "../../../recalbox/share/system/configs/model3/Supermodel.ini" };
++static const char s_gameXMLFilePath[] = { "../../../recalbox/share/system/configs/model3/Games.xml" };
+ 
+ // Create and configure inputs
+ static bool ConfigureInputs(CInputs *Inputs, Util::Config::Node *fileConfig, Util::Config::Node *runtimeConfig, const Game &game, bool configure)
