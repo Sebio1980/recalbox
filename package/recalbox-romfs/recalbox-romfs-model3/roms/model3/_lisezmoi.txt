@@ -4,4 +4,4 @@ Placez ici vos roms mame.
 
 Les roms doivent avoir l'extension ".zip"
 
- Les roms doivent provenir du romset mame 0.215
+ Les roms doivent provenir du romset mame 0.219

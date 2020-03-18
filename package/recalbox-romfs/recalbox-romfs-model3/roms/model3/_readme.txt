@@ -4,5 +4,5 @@ Put your mame roms in this directory.
 
 Rom files must have a ".zip" extension.
 
-compatible roms come from a 0.215 mame romset
+compatible roms come from a 0.219 mame romset
 
