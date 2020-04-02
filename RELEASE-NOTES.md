@@ -64,6 +64,8 @@
   - MIDI file (soundfont file required)
   More information available in share/music/readme.txt
   - Add naomigd system for your NAOMI GD-ROM games
+- Improve the management of external screens and selection from recalbox.conf by Chriskt78
+
 
 ### Fixes
 - Fix Odroid XU4 fan issue
