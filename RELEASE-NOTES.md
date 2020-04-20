@@ -23,7 +23,7 @@
 - Libretro puae emulates amigacd32 & amigacdtv now
 - Bump Amiberry to v3.1.3
 - Fba_libretro has been renamed to Fbneo
-- New ports system with Mr. Boom (Bomberman clone) ready to be played
+- New ports system with Mr. Boom (8-player Bomberman clone) ready to be played
 
 ### Improvements
 - Improve internal Scraper (ScreenScraper):
