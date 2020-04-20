@@ -20,8 +20,10 @@
 - New ngp & ngpc emulator focused on performance (fast) (libretro-race)
 - Libretro flycast also available on rpi3, xu4 and x86
 - Prboom system has been renamed to Doom
-- Libretro puae emulates amigacd32 now
+- Libretro puae emulates amigacd32 & amigacdtv now
 - Bump Amiberry to v3.1.3
+- Fba_libretro has been renamed to Fbneo
+- New ports system with Mr. Boom (Bomberman clone) ready to be played
 
 ### Improvements
 - Improve internal Scraper (ScreenScraper):
