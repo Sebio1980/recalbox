@@ -1,8 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file.
-This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [6.2]
+## [7.0]
+- Recalbox system is now a squashfs firmware
+- Automatic recovery after 3 boots failure
+- Brand new update system, easier than ever
+- Share partition is created in exfat on fresh install
 - Fix Omxplayer after Ffmpeg bump
 - Fix Kodi after Ffmpeg bump
 - Add WiringPi progs abd libs
