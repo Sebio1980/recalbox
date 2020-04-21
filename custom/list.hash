@@ -16,6 +16,8 @@ d2f9d3874553506921d9f347f6752203  package/ffmpeg/ffmpeg.mk
 6b31f620c36bb2d6c54cfaf71cc5a086  package/initscripts/init.d/rcK
 76f02a748149f1aa945aa418ea65b2bc  package/initscripts/init.d/rcS
 051b3808d67729567e2aa0255df2ef8d  package/libcec/libcec.mk
+355f6109864c21b830fc594953b4bee9  package/libwebsockets/libwebsockets.hash
+a882ee3f90b841ee11fb86f75518114c  package/libwebsockets/libwebsockets.mk
 9bff5f6d3c9c6de92b5b69491b8cb3db  package/lirc-tools/lirc-tools.mk
 90b33f03c3af71cc22494db010c0f632  package/mesa3d/mesa3d.mk
 2ec18749f235a561a99f66e3bf6fba84  package/mosquitto/mosquitto.mk

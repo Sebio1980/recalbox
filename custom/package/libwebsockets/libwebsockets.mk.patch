@@ -1,0 +1,13 @@
+diff --git a/package/libwebsockets/libwebsockets.mk b/package/libwebsockets/libwebsockets.mk
+index b29a2f14c7..9a7cb0828f 100644
+--- a/package/libwebsockets/libwebsockets.mk
++++ b/package/libwebsockets/libwebsockets.mk
+@@ -4,7 +4,7 @@
+ #
+ ################################################################################
+ 
+-LIBWEBSOCKETS_VERSION = v2.2.1
++LIBWEBSOCKETS_VERSION = v4.0.1
+ LIBWEBSOCKETS_SITE = $(call github,warmcat,libwebsockets,$(LIBWEBSOCKETS_VERSION))
+ LIBWEBSOCKETS_LICENSE = LGPL-2.1 with exceptions
+ LIBWEBSOCKETS_LICENSE_FILES = LICENSE
